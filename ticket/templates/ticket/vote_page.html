@@ -1,0 +1,10 @@
+{% extends "base_generic.html" %}
+{% block content %}
+<form action="" method="post">
+    {% csrf_token %}
+    <h3><strong>{{context}}</strong></h3><br>
+    <h4>Its rate is : {{rate}}</h4>
+    <input type="submit" value="Vote" />
+</form>
+
+{% endblock content %}

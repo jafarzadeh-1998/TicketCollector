@@ -8,4 +8,5 @@ urlpatterns = [
     path('', views.Index.as_view() ,name= 'index'),
     path('list', views.TicketList.as_view() ,name='list'),
     url(r'^detail/(?P<pk>\d+)$', views.TicketDetail.as_view() ,name= 'ticket-detail'),
+    url(r'^vote/(?P<pk>\d+)$', views.VotePage ,name= 'vote-ticket'),
 ]

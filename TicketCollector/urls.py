@@ -21,7 +21,10 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('' ,include('ticket.urls'))
+    path('' ,include('ticket.urls')),
+    path('accounts/profile/' ,views.profile.as_view()),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+urlpatterns += [path('accounts/', include('django.contrib.auth.urls')),]
