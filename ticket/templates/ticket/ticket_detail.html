@@ -1,0 +1,8 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>{{ ticket.context }}</h1>
+    <p> It has published at : {{ticket.pub_date}}<br>
+        Its rate is : {{ticket.rate}}
+    </p>
+{% endblock %}

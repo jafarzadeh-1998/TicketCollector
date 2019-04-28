@@ -1,0 +1,11 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1> List</h1>
+    <ul>
+        {% for tick in ticket_list %}
+            <li><a href="{{ tick.get_absolute_url }}">{{tick.context}}</a></li>
+        {% endfor %}
+    </ul>
+    
+{% endblock %}

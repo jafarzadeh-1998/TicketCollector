@@ -1,0 +1,7 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Index</h1>
+  <h4><strong> Tickets Number: </strong>{{ticketCount}}</h4>
+  <a href="{% url 'ticket:list' %}">Show tickets</a>
+{% endblock content %}
